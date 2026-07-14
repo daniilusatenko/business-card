@@ -1,0 +1,37 @@
+@use "./variables" as *;
+
+@mixin liquid-glass {
+  border-radius: $radius-md;
+  backdrop-filter: blur(10px);
+  background-color: $glass-bg-color;
+  border-color: $glass-border-color;
+  border-style: inset;
+  border-width: 2px 2px 1px 1px;
+  box-shadow: 0 0 5px $glass-shadow-color;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin gradient-text($start, $end) {
+  background: linear-gradient(90deg, $start, $end);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

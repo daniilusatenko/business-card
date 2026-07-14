@@ -1,0 +1,77 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+
+  &__card {
+    @include liquid-glass;
+
+    padding: $spacing-sm;
+    transition:
+      box-shadow $transition-fast,
+      transform $transition-fast;
+
+    @media (hover: hover) {
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px $color-primary;
+      }
+    }
+
+    &:active {
+      transform: scale(1.05);
+      box-shadow: 0 0 5px $color-primary;
+    }
+  }
+
+  &__container {
+    display: flex;
+    padding: $spacing-sm;
+    gap: $spacing-xl;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: $radius-full;
+    flex-shrink: 0;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__name {
+    margin: 0 0 $spacing-xs;
+    color: $color-text;
+    font-size: $font-size-2xl;
+    font-weight: 700;
+  }
+
+  &__role {
+    margin: 0 0 $spacing-sm;
+    color: $color-primary;
+    font-size: $font-size-lg;
+  }
+
+  &__description {
+    margin: 0 0 $spacing-md;
+    color: $color-text;
+    font-size: $font-size-md;
+    line-height: 1.6;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-md;
+  }
+}
+
+@media (width <= 768px) {
+  .profile__container {
+    flex-direction: column;
+  }
+}

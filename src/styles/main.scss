@@ -1,0 +1,74 @@
+@use "sass:list";
+@use "./normalize";
+@use "./variables" as *;
+@use "./mixins" as *;
+@use "./fonts";
+@use "./animations" as *;
+
+body {
+  padding: $spacing-lg;
+  color: $color-text;
+  font-family: $font-regular;
+  background-color: $color-bg;
+}
+
+section {
+  scroll-margin-top: 125px;
+}
+
+main {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 0 0;
+  flex-direction: column;
+  gap: $spacing-xl;
+}
+
+.orbs {
+  position: fixed;
+  z-index: 0;
+  overflow: hidden;
+  inset: 0;
+  pointer-events: none;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+
+  @each $orb in $orbs {
+    $i: list.index($orbs, $orb);
+    $size: list.nth($orb, 1);
+    $top: list.nth($orb, 2);
+    $bottom: list.nth($orb, 3);
+    $left: list.nth($orb, 4);
+    $right: list.nth($orb, 5);
+    $color: list.nth($orb, 6);
+    $opacity: list.nth($orb, 7);
+
+    &:nth-child(#{$i}) {
+      width: $size;
+      height: $size;
+      background: radial-gradient(circle, $color, transparent 70%);
+      opacity: $opacity;
+
+      @if $top {
+        top: $top;
+      }
+
+      @if $bottom {
+        bottom: $bottom;
+      }
+
+      @if $left {
+        left: $left;
+      }
+
+      @if $right {
+        right: $right;
+      }
+    }
+  }
+}

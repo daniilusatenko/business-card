@@ -1,0 +1,23 @@
+.button {
+  display: inline-flex;
+  padding: $spacing-md;
+  border-radius: $spacing-md;
+  color: $color-text;
+  font-family: inherit;
+  font-family: $font-bold;
+  font-size: $font-size-sm;
+  align-items: center;
+  justify-content: center;
+  transition: transform $transition-medium;
+  background-color: $color-surface;
+
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}

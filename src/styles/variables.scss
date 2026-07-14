@@ -1,0 +1,135 @@
+// Theme dark
+$color-primary-dark: #0ef;
+$color-secondary-dark: #a855f7;
+$color-text-dark: #e8e8e8;
+$color-text-secondary-dark: #e8e8e899;
+$color-bg-dark: #08080e;
+$color-surface-dark: #ffffff26;
+$glass-bg-color-dark: #1a1a1a3d;
+$glass-border-color-dark: #ffffff20;
+$glass-shadow-color-dark: #00000080;
+$first-orb-color-dark: #00d0ff82;
+$second-orb-color-dark: #8a5cf666;
+$third-orb-color-dark: #ec489a65;
+$fourth-orb-color-dark: #00ffc869;
+
+// Theme light
+$color-primary-light: #0ea5e9;
+$color-secondary-light: #8b5cf6;
+$color-text-light: #0c0c12;
+$color-text-secondary-light: #0c0c1299;
+$color-bg-light: #e6eaef;
+$color-surface-light: #00000026;
+$glass-bg-color-light: #ffffff6d;
+$glass-border-color-light: #ffffff90;
+$glass-shadow-color-light: #0000001a;
+$first-orb-color-light: #0ea4e989;
+$second-orb-color-light: #8a5cf64b;
+$third-orb-color-light: #ec489a4c;
+$fourth-orb-color-light: #00c8b44f;
+
+body.theme--dark {
+  --color-primary: #{$color-primary-dark};
+  --color-secondary: #{$color-secondary-dark};
+  --color-text: #{$color-text-dark};
+  --color-text-secondary: #{$color-text-secondary-dark};
+  --color-bg: #{$color-bg-dark};
+  --color-surface: #{$color-surface-dark};
+  --glass-bg-color: #{$glass-bg-color-dark};
+  --glass-border-color: #{$glass-border-color-dark};
+  --glass-shadow-color: #{$glass-shadow-color-dark};
+  --first-orb-color: #{$first-orb-color-dark};
+  --second-orb-color: #{$second-orb-color-dark};
+  --third-orb-color: #{$third-orb-color-dark};
+  --fourth-orb-color: #{$fourth-orb-color-dark};
+}
+
+body.theme--light {
+  --color-primary: #{$color-primary-light};
+  --color-secondary: #{$color-secondary-light};
+  --color-text: #{$color-text-light};
+  --color-text-secondary: #{$color-text-secondary-light};
+  --color-bg: #{$color-bg-light};
+  --color-surface: #{$color-surface-light};
+  --glass-bg-color: #{$glass-bg-color-light};
+  --glass-border-color: #{$glass-border-color-light};
+  --glass-shadow-color: #{$glass-shadow-color-light};
+  --first-orb-color: #{$first-orb-color-light};
+  --second-orb-color: #{$second-orb-color-light};
+  --third-orb-color: #{$third-orb-color-light};
+  --fourth-orb-color: #{$fourth-orb-color-light};
+}
+
+$color-primary: var(--color-primary);
+$color-secondary: var(--color-secondary);
+$color-text: var(--color-text);
+$color-text-secondary: var(--color-text-secondary);
+$color-bg: var(--color-bg);
+$color-surface: var(--color-surface);
+$glass-bg-color: var(--glass-bg-color);
+$glass-border-color: var(--glass-border-color);
+$glass-shadow-color: var(--glass-shadow-color);
+$first-orb-color: var(--first-orb-color);
+$second-orb-color: var(--second-orb-color);
+$third-orb-color: var(--third-orb-color);
+$fourth-orb-color: var(--fourth-orb-color);
+$orbs: (
+  (65%, -10%, null, -5%, null, $first-orb-color, 1),
+  (65%, null, -10%, 5%, null, $second-orb-color, 1),
+  (65%, null, -10%, null, -5%, $third-orb-color, 1),
+  (65%, -10%, null, null, 5%, $fourth-orb-color, 1)
+);
+$font-regular:
+  "Geist-regular",
+  -apple-system,
+  blinkmacsystemfont,
+  "Segoe UI",
+  roboto,
+  sans-serif;
+$font-bold:
+  "Geist-bold",
+  -apple-system,
+  blinkmacsystemfont,
+  "Segoe UI",
+  roboto,
+  sans-serif;
+$font-italic:
+  "Geist-italic",
+  -apple-system,
+  blinkmacsystemfont,
+  "Segoe UI",
+  roboto,
+  sans-serif;
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 20px;
+$font-size-xl: 34px;
+$font-size-2xl: 40px;
+$font-size-3xl: 48px;
+$spacing-xs: 6px;
+$spacing-sm: 10px;
+$spacing-md: 15px;
+$spacing-lg: 20px;
+$spacing-xl: 25px;
+$spacing-2xl: 30px;
+$spacing-3xl: 40px;
+$radius-sm: 15px;
+$radius-md: 20px;
+$radius-lg: 30px;
+$radius-xl: 35px;
+$radius-full: 50%;
+$shadow-sm: 0 1px 3px rgb(0 0 0 / 12%);
+$shadow-md: 0 4px 6px rgb(0 0 0 / 10%);
+$shadow-lg: 0 10px 15px rgb(0 0 0 / 10%);
+$shadow-xl: 0 20px 25px rgb(0 0 0 / 10%);
+$transition-fast: 0.2s ease;
+$transition-medium: 0.3s ease;
+$transition-slow: 0.5s ease;
+$container-max-width: 1100px;
+$container-padding: $spacing-2xl;
+$header-height: 80px;
+$z-index-header: 1000;
+$line-height-tight: 1.25;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.75;

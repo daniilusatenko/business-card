@@ -1,0 +1,35 @@
+.link {
+  position: relative;
+  width: fit-content;
+  padding: $spacing-sm;
+  font-family: $font-italic;
+  font-size: $font-size-sm;
+  text-decoration: none;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 5px;
+    background: $color-primary;
+    transition: width $transition-fast;
+    content: "";
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: $color-primary;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  :active {
+    color: $color-primary;
+  }
+}

@@ -1,0 +1,233 @@
+@use "sass:list";
+
+.about {
+  display: flex;
+  flex-direction: row;
+  gap: $spacing-lg;
+
+  &__text {
+    @include liquid-glass;
+
+    display: flex;
+    width: 100%;
+    padding: $spacing-lg;
+    flex-direction: column;
+    gap: $spacing-lg;
+    align-items: stretch;
+
+    p {
+      margin: 0;
+      color: $color-text;
+      font-size: $font-size-md;
+      line-height: 1.8;
+    }
+
+    transition:
+      box-shadow $transition-fast,
+      transform $transition-fast;
+
+    @media (hover: hover) {
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px $color-primary;
+      }
+    }
+
+    &:active {
+      transform: scale(1.05);
+      box-shadow: 0 0 5px $color-primary;
+    }
+  }
+
+  &__terminal {
+    display: flex;
+    width: 100%;
+    border-radius: $spacing-lg;
+    transition:
+      box-shadow $transition-fast,
+      transform $transition-fast;
+
+    @media (hover: hover) {
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px $color-primary;
+      }
+    }
+
+    &:active {
+      transform: scale(1.05);
+      box-shadow: 0 0 5px $color-primary;
+    }
+  }
+}
+
+@media (width <= 1000px) {
+  .about {
+    flex-direction: column;
+
+    &__terminal {
+      display: none;
+    }
+  }
+}
+
+.terminal {
+  @include liquid-glass;
+
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    padding: $spacing-sm;
+    gap: 5px;
+    border-bottom: 1px solid $color-surface;
+  }
+
+  &__dots {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: $radius-full;
+    flex-shrink: 0;
+    transition: all $transition-fast;
+
+    &:nth-child(1) {
+      background-color: #ff5f56;
+    }
+
+    &:nth-child(2) {
+      background-color: #ffbd2e;
+    }
+
+    &:nth-child(3) {
+      background-color: #27c93f;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
+
+    &:active {
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  &__title {
+    font-size: $font-size-xs;
+    font-weight: 500;
+  }
+
+  &__body {
+    padding: $spacing-sm;
+    font-size: $font-size-sm;
+    line-height: 1.8;
+    overflow: hidden;
+  }
+
+  &__row {
+    display: flex;
+    gap: $spacing-sm;
+  }
+
+  &__ascii {
+    color: $color-primary;
+    font-size: 0.7rem;
+    line-height: 1;
+    text-shadow: 0 0 20px $color-primary;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__line {
+    display: flex;
+    font-size: $font-size-sm;
+    white-space: nowrap;
+
+    &:nth-child(1) {
+      $colors-dark: #000, #cd3131, #0fbc79, #e5e50e, #2372c8, #bc3fbc, #12a7cd, #e5e5e5;
+
+      .terminal__color {
+        @each $color in $colors-dark {
+          $i: list.index($colors-dark, $color);
+
+          &:nth-child(#{$i}) {
+            background-color: $color;
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      $colors-light: #666, #f14c4c, #24d18b, #f5f543, #3b8eea, #d670d6, #28b8db, #e5e5e5;
+
+      .terminal__color {
+        @each $color in $colors-light {
+          $i: list.index($colors-light, $color);
+
+          &:nth-child(#{$i}) {
+            background-color: $color;
+          }
+        }
+      }
+    }
+  }
+
+  &__key {
+    color: $color-primary;
+    font-weight: 500;
+    flex-shrink: 0;
+    margin-inline: 5px;
+  }
+
+  &__value {
+    color: $color-text;
+    margin-left: 0;
+  }
+
+  &__colors {
+    margin-top: $spacing-md;
+  }
+
+  &__color {
+    display: block;
+    width: 25px;
+    height: 15px;
+    transition: transform $transition-fast;
+  }
+
+  &__cursor {
+    display: inline-block;
+    color: $color-primary;
+    animation: blink 1s step-end infinite;
+  }
+
+  &__prompt {
+    display: flex;
+    color: $color-text;
+    gap: $spacing-sm;
+  }
+
+  &__user {
+    color: #27c93f;
+  }
+
+  &__git {
+    border-radius: $radius-sm;
+    color: $color-secondary;
+    font-size: $font-size-xs;
+    background-color: $color-surface;
+    padding-inline: 5px;
+  }
+}

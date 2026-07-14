@@ -1,0 +1,7 @@
+.title {
+  @include gradient-text($color-primary, $color-secondary);
+
+  width: max-content;
+  font-family: $font-bold;
+  letter-spacing: 1px;
+}

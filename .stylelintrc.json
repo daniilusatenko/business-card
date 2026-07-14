@@ -1,0 +1,76 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "order/properties-order": [
+      [
+        "display",
+        "position",
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "z-index",
+        "width",
+        "height",
+        "min-width",
+        "max-width",
+        "min-height",
+        "max-height",
+        "margin",
+        "padding",
+        "border",
+        "border-radius",
+        "background",
+        "color",
+        "font-family",
+        "font-size",
+        "font-weight",
+        "line-height",
+        "text-align",
+        "text-decoration",
+        "text-transform",
+        "letter-spacing",
+        "flex",
+        "flex-direction",
+        "flex-wrap",
+        "flex-shrink",
+        "flex-grow",
+        "gap",
+        "grid-template-columns",
+        "grid-template-rows",
+        "align-items",
+        "justify-content",
+        "transition",
+        "transform",
+        "animation",
+        "opacity",
+        "visibility",
+        "overflow"
+      ],
+      {
+        "unspecified": "bottomAlphabetical"
+      }
+    ],
+    "scss/at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "include",
+          "mixin",
+          "use",
+          "extend",
+          "if",
+          "else",
+          "each",
+          "for",
+          "function",
+          "return"
+        ]
+      }
+    ],
+    "scss/no-global-function-names": null,
+    "selector-class-pattern": null,
+    "no-descending-specificity": null
+  }
+}

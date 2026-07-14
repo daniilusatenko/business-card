@@ -1,0 +1,39 @@
+.button {
+  @include liquid-glass;
+
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  border-radius: $radius-full;
+  color: $color-primary;
+  font-size: $font-size-lg;
+  text-align: center;
+  transition:
+    box-shadow $transition-medium,
+    transform $transition-medium,
+    pointer-events $transition-medium;
+  transform: translateY(20px);
+  opacity: 0;
+  background-color: $color-surface;
+  cursor: pointer;
+  pointer-events: none;
+
+  @media (hover: hover) {
+    &:hover {
+      box-shadow: 0 0 10px $color-secondary;
+    }
+  }
+
+  &:active {
+    box-shadow: 0 0 20px $color-secondary;
+  }
+
+  &.visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+}
