@@ -7,17 +7,15 @@
 
   &__container {
     display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
+    justify-content: center;
   }
 
-  &__left {
+  &__grid {
     display: grid;
-    flex: 1 1 100%;
     gap: $spacing-md;
     grid-template-columns: repeat(3, 1fr);
-    align-content: center;
-    justify-items: center;
+    width: 100%;
+    max-width: 700px;
   }
 
   &__column {
@@ -56,8 +54,8 @@
     padding-top: $spacing-md;
   }
 
-  @media (width <= 768px) {
-    &__left {
+  @media (max-width: 500px) {
+    &__grid {
       grid-template-columns: 1fr 1fr;
     }
 
