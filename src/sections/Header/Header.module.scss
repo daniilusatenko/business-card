@@ -48,7 +48,7 @@
     cursor: pointer;
   }
 
-  &__burgerLine {
+  &__burger-line {
     display: block;
     width: 25px;
     height: 2px;
@@ -58,7 +58,7 @@
     transform-origin: center;
   }
 
-  &__burger--active &__burgerLine {
+  &__burger--active &__burger-line {
     &:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px);
     }
@@ -112,7 +112,7 @@
   @media (width <= 550px) {
     padding: $spacing-sm;
 
-    &__logo {
+    &__repo-link {
       margin-right: auto;
     }
 

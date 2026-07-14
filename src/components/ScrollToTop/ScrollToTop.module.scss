@@ -1,4 +1,4 @@
-.button {
+.scroll-to-top {
   @include liquid-glass;
 
   position: fixed;
@@ -14,7 +14,8 @@
   transition:
     box-shadow $transition-medium,
     transform $transition-medium,
-    pointer-events $transition-medium;
+    pointer-events $transition-medium,
+    opacity $transition-medium;
   transform: translateY(20px);
   opacity: 0;
   background-color: $color-surface;
@@ -31,7 +32,7 @@
     box-shadow: 0 0 20px $color-secondary;
   }
 
-  &.visible {
+  &--visible {
     transform: translateY(0);
     opacity: 1;
     pointer-events: all;

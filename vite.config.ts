@@ -22,7 +22,6 @@ export default defineConfig({
         additionalData: `
           @use "@styles/variables" as *;
           @use "@styles/mixins" as *;
-          @use "@styles/animations" as *;
         `,
       },
     },

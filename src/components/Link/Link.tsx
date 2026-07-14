@@ -22,7 +22,7 @@ export default function Link({
   return (
     <a
       href={href}
-      className={`${styles.link} ${underline ? styles.underline : ""} ${className}`}
+      className={`${styles["link"]} ${underline ? styles["underline"] : ""} ${className}`}
       target={target}
       rel={rel}
       onClick={onClick}

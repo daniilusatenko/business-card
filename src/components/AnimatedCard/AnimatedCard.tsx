@@ -10,7 +10,7 @@ interface AnimatedCardProps {
 export default function AnimatedCard({ children, delay = 0, className }: AnimatedCardProps) {
   return (
     <motion.div
-      className={`${styles.card} ${className}`}
+      className={`${styles["animated-card"]} ${className}`}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.1 }}

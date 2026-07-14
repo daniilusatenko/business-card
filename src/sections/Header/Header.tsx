@@ -16,7 +16,6 @@ export default function Header() {
       const scrollY = window.scrollY;
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
-
       const footerThreshold = documentHeight - windowHeight - 500;
 
       if (scrollY > footerThreshold) {
@@ -42,7 +41,7 @@ export default function Header() {
 
   return (
     <header
-      className={`${styles.header} ${scrolled ? styles["header--scrolled"] : ""} ${
+      className={`${styles["header"]} ${scrolled ? styles["header--scrolled"] : ""} ${
         !isVisible ? styles["header--hidden"] : ""
       }`}
     >
@@ -56,7 +55,7 @@ export default function Header() {
         {`</>`}
       </Link>
 
-      <nav className={`${styles.header__nav} ${isMenuOpen ? styles["header__nav--open"] : ""}`}>
+      <nav className={`${styles["header__nav"]} ${isMenuOpen ? styles["header__nav--open"] : ""}`}>
         {navigation.map((link) => (
           <Link
             key={link.id}
@@ -71,18 +70,18 @@ export default function Header() {
         ))}
       </nav>
 
-      <button className={styles.header__toggle} onClick={toggleTheme}>
+      <button className={styles["header__theme-toggle"]} onClick={toggleTheme}>
         <img src={theme === "dark" ? Moon : Sun} alt="" />
       </button>
 
       <button
-        className={`${styles.header__burger} ${isMenuOpen ? styles["header__burger--active"] : ""}`}
+        className={`${styles["header__burger"]} ${isMenuOpen ? styles["header__burger--active"] : ""}`}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Меню"
       >
-        <span className={styles.header__burgerLine} />
-        <span className={styles.header__burgerLine} />
-        <span className={styles.header__burgerLine} />
+        <span className={styles["header__burger-line"]} />
+        <span className={styles["header__burger-line"]} />
+        <span className={styles["header__burger-line"]} />
       </button>
     </header>
   );

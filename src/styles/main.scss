@@ -1,9 +1,8 @@
 @use "sass:list";
 @use "./normalize";
-@use "./variables" as *;
-@use "./mixins" as *;
+@use "./variables";
+@use "./mixins";
 @use "./fonts";
-@use "./animations" as *;
 
 body {
   padding: $spacing-lg;

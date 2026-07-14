@@ -14,11 +14,11 @@ export default function Footer() {
 
   return (
     <footer id="footer" className={styles.footer}>
-      <div className={styles.footer__container}>
-        <div className={styles.footer__left}>
-          <div className={styles.footer__column}>
-            <h3 className={styles.footer__heading}>Контакты</h3>
-            <div className={styles.footer__links}>
+      <div className={styles["footer__container"]}>
+        <div className={styles["footer__left"]}>
+          <div className={styles["footer__column"]}>
+            <h3 className={styles["footer__heading"]}>Контакты</h3>
+            <div className={styles["footer__links"]}>
               {footer.contacts.map((contact) => (
                 <Link key={contact.label} href={contact.href} rel="noopener noreferrer">
                   {contact.label}
@@ -27,9 +27,9 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className={styles.footer__column}>
-            <h3 className={styles.footer__heading}>Платформы</h3>
-            <div className={styles.footer__links}>
+          <div className={styles["footer__column"]}>
+            <h3 className={styles["footer__heading"]}>Платформы</h3>
+            <div className={styles["footer__links"]}>
               {footer.socials.map((social) => (
                 <Link key={social.label} href={social.href} rel="noopener noreferrer">
                   {social.label}
@@ -38,9 +38,9 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className={styles.footer__column}>
-            <h3 className={styles.footer__heading}>Навигация</h3>
-            <div className={styles.footer__links}>
+          <div className={styles["footer__column"]}>
+            <h3 className={styles["footer__heading"]}>Навигация</h3>
+            <div className={styles["footer__links"]}>
               {navigation.map((link) => (
                 <Link
                   key={link.id}
@@ -57,7 +57,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <p className={styles.footer__copyright}>
+      <p className={styles["footer__copyright"]}>
         © {currentYear} {profile.name}. Все права защищены.
       </p>
     </footer>

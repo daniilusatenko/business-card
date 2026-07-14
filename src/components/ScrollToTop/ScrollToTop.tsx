@@ -19,7 +19,7 @@ export default function ScrollToTop() {
 
   return (
     <button
-      className={`${styles.button} ${isVisible ? styles.visible : ""}`}
+      className={`${styles["scroll-to-top"]} ${isVisible ? styles["scroll-to-top--visible"] : ""}`}
       onClick={scrollToTop}
       aria-label="Наверх"
     >

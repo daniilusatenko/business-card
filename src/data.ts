@@ -219,10 +219,10 @@ export const timeline = [
 export const footer = {
   contacts: [
     { href: "https://t.me/daniilusatenko", label: "Telegram" },
-    { href: "https://signal.me/#p/+995422575575", label: "Signal" },
-    { href: "mailto:daniilusatenko@proton.me", label: "daniilusatenko@proton.me" },
-    { href: "tel:+79055755751", label: "+7 (905) 575-57-51" },
-    { href: "tel:+995422575575", label: "+995 (422) 57-55-75" },
+    { href: "https://signal.me/#p/daniilusatenko", label: "Signal" },
+    { href: "mailto:daniilusatenko@proton.me", label: "Email" },
+    { href: "tel:+79055755751", label: "Phone (RU)" },
+    { href: "tel:+995422575575", label: "Phone (GE)" },
   ],
   socials: [
     { href: "https://github.com/daniilusatenko", label: "GitHub" },

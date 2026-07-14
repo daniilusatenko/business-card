@@ -7,7 +7,7 @@ interface ButtonProps {
 
 export default function Button({ children, onClick }: ButtonProps) {
   return (
-    <button className={styles.button} onClick={onClick}>
+    <button className={styles["button"]} onClick={onClick}>
       {children}
     </button>
   );
