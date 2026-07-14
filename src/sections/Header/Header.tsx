@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { navigation } from "@/data";
+import { navigation, profile } from "@/data";
 import { useTheme } from "@contexts";
 import { Link } from "@components";
 import { Sun, Moon } from "@assets/icons/index";
@@ -46,7 +46,13 @@ export default function Header() {
         !isVisible ? styles["header--hidden"] : ""
       }`}
     >
-      <Link href="#top" className={styles.header__logo} underline={false}>
+      <Link
+        href={profile.github}
+        className={styles["header__repo-link"]}
+        underline={false}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {`</>`}
       </Link>
 

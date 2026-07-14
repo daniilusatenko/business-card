@@ -7,6 +7,7 @@ export const profile = {
   description:
     "Создаю современные приложения с фокусом на производительность, масштабируемость и чистый код. Работаю с React, TypeScript и React Native, уделяю внимание UX/UI и оптимизации. Постоянно учусь и внедряю новые технологии. Ищу первый коммерческий опыт для профессионального роста.",
   avatar: Images.avatar,
+  github: "https://github.com/daniilusatenko/business-card",
 };
 
 export const about = {
@@ -216,17 +217,19 @@ export const timeline = [
 ];
 
 export const footer = {
-  contacts: {
-    telegram: "USATbIY_DEV",
-    phones: ["+7 (905) 575-57-51", "+995 (422) 57-55-75"],
-    emails: ["daniil@usatenko.dev", "USATbIY@gmail.com"],
-  },
+  contacts: [
+    { href: "https://t.me/daniilusatenko", label: "Telegram" },
+    { href: "https://signal.me/#p/+995422575575", label: "Signal" },
+    { href: "mailto:daniilusatenko@proton.me", label: "daniilusatenko@proton.me" },
+    { href: "tel:+79055755751", label: "+7 (905) 575-57-51" },
+    { href: "tel:+995422575575", label: "+995 (422) 57-55-75" },
+  ],
   socials: [
-    { href: "https://github.com/username", label: "GitHub" },
-    { href: "https://hh.ru/resume/username", label: "HH.ru" },
-    { href: "https://habr.com/ru/users/username", label: "Habr" },
-    { href: "https://linkedin.com/in/username", label: "LinkedIn" },
-    { href: "https://leetcode.com/username", label: "LeetCode" },
+    { href: "https://github.com/daniilusatenko", label: "GitHub" },
+    { href: "https://hh.ru/resume/daniilusatenko", label: "HH.ru" },
+    { href: "https://habr.com/ru/users/daniilusatenko", label: "Habr" },
+    { href: "https://linkedin.com/in/daniilusatenko", label: "LinkedIn" },
+    { href: "https://leetcode.com/daniilusatenko", label: "LeetCode" },
   ],
 };
 

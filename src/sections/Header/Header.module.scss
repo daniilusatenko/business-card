@@ -28,7 +28,7 @@
     pointer-events: none;
   }
 
-  &__logo {
+  &__repo-link {
     padding: 0;
     background: linear-gradient(135deg, $color-primary, $color-secondary);
     font-size: $font-size-xl;
@@ -85,7 +85,7 @@
   }
 
   &__toggle {
-    width: 30px;
+    width: 35px;
     height: 30px;
     padding: 0;
     border: none;
@@ -104,7 +104,6 @@
 
     @media (hover: hover) {
       &:hover {
-        width: 35px;
         height: 35px;
       }
     }
