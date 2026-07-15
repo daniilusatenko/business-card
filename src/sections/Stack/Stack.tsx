@@ -9,7 +9,7 @@ export default function Stack() {
       <section id="stack" className={styles["stack"]}>
         <div className={styles["stack__grid"]}>
           {stack.map((item, index) => (
-            <AnimatedCard key={item.name} delay={index * 0.05}>
+            <AnimatedCard key={item.name} delay={index * 0.04}>
               <div className={styles["tech"]}>
                 <img src={item.icon} alt={item.name} className={styles["tech__icon"]} />
                 <span className={styles["tech__name"]}>{item.name}</span>

@@ -8,7 +8,7 @@ export default function About() {
       <Title>{about.title}</Title>
       <AnimatedSection id="about" className={styles["about"]}>
         <div className={styles["about__text"]}>
-          {about.text.map((paragraph, index) => (
+          {about.description.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
         </div>

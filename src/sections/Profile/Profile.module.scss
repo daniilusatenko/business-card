@@ -1,12 +1,12 @@
 .profile {
   display: flex;
   flex-direction: column;
-  gap: $spacing-lg;
+  gap: $spacing-xl;
 
   &__card {
     @include liquid-glass;
 
-    padding: $spacing-sm;
+    padding: $spacing-md;
     transition:
       box-shadow $transition-fast,
       transform $transition-fast;
@@ -37,6 +37,7 @@
     height: 250px;
     border-radius: $radius-full;
     flex-shrink: 0;
+    box-shadow: 0 0 5px $color-primary;
   }
 
   &__content {

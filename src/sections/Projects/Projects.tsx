@@ -29,14 +29,24 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                {project.link && (
+                {project.repo && (
                   <a
-                    href={project.link}
+                    href={project.repo}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles["card__link"]}
                   >
-                    Посмотреть →
+                    Репозиторий →
+                  </a>
+                )}
+                {project.test && (
+                  <a
+                    href={project.test}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles["card__link"]}
+                  >
+                    Протестировать →
                   </a>
                 )}
               </div>

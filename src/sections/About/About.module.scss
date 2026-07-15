@@ -3,23 +3,23 @@
 .about {
   display: flex;
   flex-direction: row;
-  gap: $spacing-lg;
+  gap: $spacing-xl;
 
   &__text {
     @include liquid-glass;
 
     display: flex;
     width: 100%;
-    padding: $spacing-lg;
+    padding: $spacing-md;
     flex-direction: column;
-    gap: $spacing-lg;
+    gap: $spacing-md;
     align-items: stretch;
 
     p {
       margin: 0;
       color: $color-text;
       font-size: $font-size-md;
-      line-height: 1.8;
+      line-height: 1.3;
     }
 
     transition:

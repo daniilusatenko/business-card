@@ -5,21 +5,17 @@
 @use "./fonts";
 
 body {
-  padding: $spacing-lg;
+  padding: $spacing-xl;
   color: $color-text;
   font-family: $font-regular;
   background-color: $color-bg;
 }
 
-section {
-  scroll-margin-top: 125px;
-}
-
 main {
   display: flex;
   max-width: 1100px;
-  margin: 0 auto;
-  padding: 100px 0 0;
+  margin: $spacing-xl auto;
+  padding: 50px 0 0;
   flex-direction: column;
   gap: $spacing-xl;
 }

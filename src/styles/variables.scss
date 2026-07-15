@@ -2,7 +2,6 @@
 $color-primary-dark: #0ef;
 $color-secondary-dark: #a855f7;
 $color-text-dark: #e8e8e8;
-$color-text-secondary-dark: #e8e8e899;
 $color-bg-dark: #08080e;
 $color-surface-dark: #ffffff26;
 $glass-bg-color-dark: #1a1a1a3d;
@@ -14,10 +13,9 @@ $third-orb-color-dark: #ec489a4c;
 $fourth-orb-color-dark: #00c8b44f;
 
 // Theme light
-$color-primary-light: #0ea5e9;
-$color-secondary-light: #8b5cf6;
+$color-primary-light: #0e45e9;
+$color-secondary-light: #4714be;
 $color-text-light: #0c0c12;
-$color-text-secondary-light: #0c0c1299;
 $color-bg-light: #e6eaef;
 $color-surface-light: #00000026;
 $glass-bg-color-light: #ffffff6d;
@@ -32,7 +30,6 @@ body.theme--dark {
   --color-primary: #{$color-primary-dark};
   --color-secondary: #{$color-secondary-dark};
   --color-text: #{$color-text-dark};
-  --color-text-secondary: #{$color-text-secondary-dark};
   --color-bg: #{$color-bg-dark};
   --color-surface: #{$color-surface-dark};
   --glass-bg-color: #{$glass-bg-color-dark};
@@ -48,7 +45,6 @@ body.theme--light {
   --color-primary: #{$color-primary-light};
   --color-secondary: #{$color-secondary-light};
   --color-text: #{$color-text-light};
-  --color-text-secondary: #{$color-text-secondary-light};
   --color-bg: #{$color-bg-light};
   --color-surface: #{$color-surface-light};
   --glass-bg-color: #{$glass-bg-color-light};
@@ -63,7 +59,6 @@ body.theme--light {
 $color-primary: var(--color-primary);
 $color-secondary: var(--color-secondary);
 $color-text: var(--color-text);
-$color-text-secondary: var(--color-text-secondary);
 $color-bg: var(--color-bg);
 $color-surface: var(--color-surface);
 $glass-bg-color: var(--glass-bg-color);
