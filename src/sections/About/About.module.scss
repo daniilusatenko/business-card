@@ -61,20 +61,11 @@
   }
 }
 
-@media (width <= 1000px) {
-  .about {
-    flex-direction: column;
-
-    &__terminal {
-      display: none;
-    }
-  }
-}
-
 .terminal {
   @include liquid-glass;
 
   display: flex;
+  width: 100%;
   flex-direction: column;
 
   &__header {
@@ -122,19 +113,20 @@
   }
 
   &__title {
-    font-size: $font-size-xs;
-    font-weight: 500;
+    font-size: $font-size-md;
   }
 
   &__body {
+    display: flex;
+    width: 100%;
     padding: $spacing-sm;
-    font-size: $font-size-sm;
-    line-height: 1.8;
-    overflow: hidden;
+    line-height: 1.5;
+    flex-direction: column;
   }
 
   &__row {
     display: flex;
+    width: 100%;
     gap: $spacing-sm;
   }
 
@@ -186,7 +178,6 @@
 
   &__key {
     color: $color-primary;
-    font-weight: 500;
     flex-shrink: 0;
     margin-inline: 5px;
   }
@@ -197,7 +188,7 @@
   }
 
   &__colors {
-    margin-top: $spacing-md;
+    margin-block: $spacing-sm;
   }
 
   &__color {
@@ -228,7 +219,17 @@
     color: $color-secondary;
     font-size: $font-size-xs;
     background-color: $color-surface;
-    padding-inline: 5px;
+    padding: 4px 8px;
+  }
+}
+
+@media (width <= 1000px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .terminal__row {
+    flex-direction: column;
   }
 }
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./ScrollToTop.module.scss";
-
+import { Top } from "@assets/icons/index";
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -23,7 +23,7 @@ export default function ScrollToTop() {
       onClick={scrollToTop}
       aria-label="Наверх"
     >
-      ⏏︎
+      <img src={Top} alt="" className={styles["scroll-to-top__icon"]} />
     </button>
   );
 }

@@ -16,5 +16,6 @@ export { default as ReactNative } from "./ReactNative.svg";
 export { default as Sass } from "./Sass.svg";
 export { default as TypeScript } from "./TypeScript.svg";
 export { default as Vite } from "./Vite.svg";
-export { default as Sun } from "@/assets/icons/Sun.svg";
-export { default as Moon } from "@/assets/icons/Moon.svg";
+export { default as Sun } from "./Sun.svg";
+export { default as Moon } from "./Moon.svg";
+export { default as Top } from "./Top.svg";

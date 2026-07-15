@@ -44,7 +44,7 @@
   &__content {
     @include liquid-glass;
 
-    padding: $spacing-md;
+    padding: $spacing-lg;
     flex: 1;
     transition:
       transform $transition-fast,
