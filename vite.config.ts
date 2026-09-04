@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/business-card/",
+  base: "/",
   assetsInclude: ["**/*.svg"],
   resolve: {
     alias: {
