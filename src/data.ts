@@ -124,10 +124,9 @@ export const projects = [
   {
     title: "Auralifting",
     description:
-      "Спортивный мультиприложение с трекером тренировок, отслежианием питания, встроенной социальной сетью. Позволяет пользователям соревноваться, общаться и отслеживать прогресс.",
+      "Интерфейс мобильного приложения на React Native для мультиприложения с трекером тренировок, отслежианием питания, встроенной социальной сетью. Позволяет пользователям соревноваться, общаться и отслеживать прогресс.",
     stack: ["React Native", "TypeScript", "Golang", "PostgreSQL", "Docker"],
     repo: "https://github.com/daniilusatenko/auralifting",
-    test: "https://ucatbiy.github.io/auralifting",
     image: Images.auralifting,
   },
   {
@@ -145,7 +144,7 @@ export const projects = [
       "Аркадная веб-игра с динамичной физикой и яркими анимациями. Игроку нужно уничтожать фигуры, набирая очки и комбо. По ходу игры сложность увеличивается. Простая механика, но сложно оторваться.",
     stack: ["HTML", "CSS", "JS", "matterJS"],
     repo: "https://github.com/daniilusatenko/glow-flow",
-    test: "https://ucatbiy.github.io/glow-flow",
+    test: "https://daniilusatenko.github.io/glow-flow",
     image: Images.glowFlow,
   },
   {
@@ -154,7 +153,7 @@ export const projects = [
       "Логическая игра, где нужно составлять слова из предложенных букв. Меняй буквы местами, чтобы найти правильные комбинации на каждой строке. Проверь свою внимательность и словарный запас.",
     stack: ["HTML", "CSS", "JS", "JSON"],
     repo: "https://github.com/daniilusatenko/draword",
-    test: "https://ucatbiy.github.io/draword-game",
+    test: "https://daniilusatenko.github.io/draword-game",
     image: Images.draword,
   },
   {
@@ -238,16 +237,15 @@ export const footer = {
   contacts: [
     { href: "https://t.me/daniilusatenko", label: "Telegram" },
     { href: "https://signal.me/#p/daniilusatenko", label: "Signal" },
-    { href: "mailto:daniilusatenko@proton.me", label: "Email" },
+    { href: "mailto:support@daniilusatenko.com", label: "Email" },
     { href: "tel:+79055755751", label: "Phone (RU)" },
-    { href: "tel:+995575575575", label: "Phone (GE)" },
+    { href: "tel:+995599715975", label: "Phone (GE)" },
   ],
   socials: [
     { href: "https://github.com/daniilusatenko", label: "GitHub" },
     { href: "https://hh.ru/resume/daniilusatenko", label: "HH.ru" },
     { href: "https://habr.com/ru/users/daniilusatenko", label: "Habr" },
     { href: "https://linkedin.com/in/daniilusatenko", label: "LinkedIn" },
-    { href: "https://leetcode.com/daniilusatenko", label: "LeetCode" },
   ],
 };
 

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: $spacing-xl;
+  z-index: 50;
 
   &__grid {
     display: grid;

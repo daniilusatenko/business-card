@@ -2,7 +2,6 @@
 
 @mixin liquid-glass {
   border-radius: $radius-md;
-  backdrop-filter: blur(10px);
   background-color: $glass-bg-color;
   border-color: $glass-border-color;
   border-style: inset;

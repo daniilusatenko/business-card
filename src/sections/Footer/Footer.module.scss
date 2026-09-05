@@ -4,6 +4,7 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: $spacing-xl;
+  z-index: 50;
 
   &__container {
     display: flex;
