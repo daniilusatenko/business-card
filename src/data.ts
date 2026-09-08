@@ -122,10 +122,19 @@ export const skills = [
 ];
 export const projects = [
   {
+    title: "AI person kit",
+    description:
+      "Симулятор общения с AI-персонажем. Персонаж может поддерживать диалог в реальном времени. Запросы обрабатываются на сервере с использованием AI-моделей, а ответы отображаются в интерфейсе приложения.",
+    stack: ["HTML", "CSS", "JS", "NodeJS", "ExpressJS", "Llama.cpp"],
+    repo: "https://github.com/daniilusatenko/aipersonkit",
+    test: "http://95.31.178.182:5500/",
+    image: Images.noImageAvailable,
+  },
+  {
     title: "Auralifting",
     description:
       "Интерфейс мобильного приложения на React Native для мультиприложения с трекером тренировок, отслежианием питания, встроенной социальной сетью. Позволяет пользователям соревноваться, общаться и отслеживать прогресс.",
-    stack: ["React Native", "TypeScript", "Golang", "PostgreSQL", "Docker"],
+    stack: ["React Native", "TypeScript"],
     repo: "https://github.com/daniilusatenko/auralifting",
     image: Images.auralifting,
   },
@@ -139,13 +148,13 @@ export const projects = [
     image: Images.chat,
   },
   {
-    title: "Glow Flow",
+    title: "ACSIITreeParser",
     description:
-      "Аркадная веб-игра с динамичной физикой и яркими анимациями. Игроку нужно уничтожать фигуры, набирая очки и комбо. По ходу игры сложность увеличивается. Простая механика, но сложно оторваться.",
-    stack: ["HTML", "CSS", "JS", "matterJS"],
-    repo: "https://github.com/daniilusatenko/glow-flow",
-    test: "https://daniilusatenko.github.io/glow-flow",
-    image: Images.glowFlow,
+      "Расширение для VSCode, которое создаёт файловую структуру проекта прямо в IDE на основе ASCII-дерева из буфера обмена. Идеально для быстрого развёртывания структуры, сгенерированной ИИ.",
+    stack: ["NodeJS", "JSON", "VSIX"],
+    repo: "https://github.com/daniilusatenko/ascii-tree-parser",
+    test: "https://marketplace.visualstudio.com/items?itemName=Dannil-Usatenko.ascii-tree-parser",
+    image: Images.asciiTreeParser,
   },
   {
     title: "Draword",
@@ -157,13 +166,13 @@ export const projects = [
     image: Images.draword,
   },
   {
-    title: "ACSIITreeParser",
+    title: "Glow Flow",
     description:
-      "Расширение для VSCode, которое создаёт файловую структуру проекта прямо в IDE на основе ASCII-дерева из буфера обмена. Идеально для быстрого развёртывания структуры, сгенерированной ИИ.",
-    stack: ["NodeJS", "JSON", "VSIX"],
-    repo: "https://github.com/daniilusatenko/ascii-tree-parser",
-    test: "https://marketplace.visualstudio.com/items?itemName=Dannil-Usatenko.ascii-tree-parser",
-    image: Images.asciiTreeParser,
+      "Аркадная веб-игра с динамичной физикой и яркими анимациями. Игроку нужно уничтожать фигуры, набирая очки и комбо. По ходу игры сложность увеличивается. Простая механика, но сложно оторваться.",
+    stack: ["HTML", "CSS", "JS", "matterJS"],
+    repo: "https://github.com/daniilusatenko/glow-flow",
+    test: "https://daniilusatenko.github.io/glow-flow",
+    image: Images.glowFlow,
   },
 ];
 export const stack = [
@@ -235,8 +244,8 @@ export const timeline = [
 
 export const footer = {
   contacts: [
-    { href: "https://t.me/daniilusatenko", label: "Telegram" },
-    { href: "https://signal.me/#p/daniilusatenko", label: "Signal" },
+    { href: "https://t.me/SSH_CONNECTED", label: "Telegram" },
+    { href: "https://signal.me/#p/daniilusatenko.27", label: "Signal" },
     { href: "mailto:support@daniilusatenko.com", label: "Email" },
     { href: "tel:+79055755751", label: "Phone (RU)" },
     { href: "tel:+995599715975", label: "Phone (GE)" },

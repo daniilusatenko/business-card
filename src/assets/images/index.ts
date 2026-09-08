@@ -4,3 +4,4 @@ export { default as avatar } from "@assets/images/avatar.png";
 export { default as chat } from "@assets/images/chat.png";
 export { default as draword } from "@assets/images/draword.png";
 export { default as glowFlow } from "@assets/images/glowFlow.png";
+export { default as noImageAvailable } from "@assets/images/noImageAvailable.png";
