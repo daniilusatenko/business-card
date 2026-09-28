@@ -245,21 +245,16 @@ export const timeline = [
 export const footer = {
   contacts: [
     { href: "https://t.me/SSH_CONNECTED", label: "Telegram" },
-    { href: "https://signal.me/#p/daniilusatenko.27", label: "Signal" },
     { href: "mailto:support@daniilusatenko.com", label: "Email" },
-    { href: "tel:+79055755751", label: "Phone (RU)" },
-    { href: "tel:+995599715975", label: "Phone (GE)" },
   ],
   socials: [
     { href: "https://github.com/daniilusatenko", label: "GitHub" },
     { href: "https://hh.ru/resume/daniilusatenko", label: "HH.ru" },
     { href: "https://habr.com/ru/users/daniilusatenko", label: "Habr" },
-    { href: "https://linkedin.com/in/daniilusatenko", label: "LinkedIn" },
   ],
 };
 
 export const navigation = [
-  { id: "top", label: "Главная" },
   { id: "skills", label: "Навыки" },
   { id: "projects", label: "Проекты" },
   { id: "stack", label: "Стек" },
